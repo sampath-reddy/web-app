@@ -1,0 +1,31 @@
+{
+  "name": "web-app",
+  "version": "1.0.0",
+  "description": "basic web app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\" ",
+    "client:build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sampath-reddy/web-app.git"
+  },
+  "author": "sampath",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sampath-reddy/web-app/issues"
+  },
+  "homepage": "https://github.com/sampath-reddy/web-app#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+
+}
